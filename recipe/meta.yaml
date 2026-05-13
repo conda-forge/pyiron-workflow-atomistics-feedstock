@@ -1,5 +1,5 @@
 {% set name = "pyiron-workflow-atomistics" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.6" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_workflow_atomistics-{{ version }}.tar.gz
-  sha256: 9d87dc036a5edb7273f593422d2d763ca9b6f6cfc36996299dce6042c2f5b0c5
+  sha256: 6d537ba384449a385fe93b049bf9c3184c5db300d08ba4aa0b833699ce07b177
 
 build:
   noarch: python
@@ -41,7 +41,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
-    
+
 about:
   home: https://github.com/pyiron/pyiron_workflow_atomistics
   summary: A pyiron-workflow module for atomistic simulation workflows
